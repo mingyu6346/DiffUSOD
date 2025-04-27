@@ -1,0 +1,62 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+#    image_root: '/media/omnisky/jixie/zmy/dataset/RSDDS/RSDDS/train/RGB/'
+#    gt_root: '/media/omnisky/jixie/zmy/dataset/RSDDS/RSDDS/train/GT/'
+
+#    image_root: '/media/omnisky/jixie/zmy/dataset/COD/train/RGB/'
+#    gt_root: '/media/omnisky/jixie/zmy/dataset/COD/train/GT/'
+
+    image_root: '/media/omnisky/jixie/zmy/dataset/USOD10K/TR_VAL/RGB/'
+    gt_root: '/media/omnisky/jixie/zmy/dataset/USOD10K/TR_VAL/GT/'
+
+#    image_root: '/media/omnisky/jixie/zmy/dataset/USOD10K/TR/RGB/'
+#    gt_root: '/media/omnisky/jixie/zmy/dataset/USOD10K/TR/GT/'
+
+#    image_root: '/media/omnisky/jixie/zmy/dataset/RGB_SOD/DUTS-TR/RGB/'
+#    gt_root: '/media/omnisky/jixie/zmy/dataset/RGB_SOD/DUTS-TR/GT/'
+
+    trainsize: 384
+
+test_dataset:
+  USOD10K:
+    name: dataset.data_val.test_dataset
+    params:
+
+#      image_root: '/media/omnisky/jixie/zmy/dataset/RSDDS/RSDDS/test/RGB/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/RSDDS/RSDDS/test/GT/'
+
+
+
+#      image_root: '/media/omnisky/jixie/zmy/dataset/test/USOD10K_USOD/RGB/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/test/USOD10K_USOD/GT/'
+
+      image_root: '/media/omnisky/jixie/zmy/dataset/test/USOD10K/RGB/'
+      gt_root: '/media/omnisky/jixie/zmy/dataset/test/USOD10K/GT/'
+
+#      image_root: '/media/omnisky/jixie/zmy/dataset/test/COD10K/RGB/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/test/COD10K/GT/'
+
+#      image_root: '/media/omnisky/jixie/zmy/dataset/RGB_SOD/DUT-OMRON/RGB/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/RGB_SOD/DUT-OMRON/GT/'
+#      image_root: '/media/omnisky/jixie/zmy/dataset/RGB_SOD/PASCAL-S/RGB/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/RGB_SOD/PASCAL-S/GT/'
+      testsize: 384
+  USOD:
+    name: dataset.data_val.test_dataset
+    params:
+#      image_root: '/media/omnisky/jixie/zmy/dataset/EORSSD/test/images/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/EORSSD/test/gt/'
+#      image_root: '/media/omnisky/jixie/zmy/dataset/RSDDS/RSDDS/test/RGB/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/RSDDS/RSDDS/test/GT/'
+
+
+#      image_root: '/media/omnisky/jixie/zmy/dataset/test/USOD/RGB/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/test/USOD/GT/'
+
+#      image_root: '/media/omnisky/jixie/zmy/dataset/test/NC4K/RGB/'
+#      gt_root: '/media/omnisky/jixie/zmy/dataset/test/NC4K/GT/'
+      image_root: '/media/omnisky/jixie/zmy/dataset/RGB_SOD/HKU-IS/RGB/'
+      gt_root: '/media/omnisky/jixie/zmy/dataset/RGB_SOD/HKU-IS/GT/'
+
+      testsize: 384
